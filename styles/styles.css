@@ -9,7 +9,7 @@
 /* Shared Section */
 .card_title {
     color: rgb(14, 14, 14);
-    font-size: 40px;
+    font-size: 2.5rem;
     font-weight: 700;
 }
 
@@ -17,33 +17,32 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: Fira Sans;
+    font-family: "Fira Sans", serif;
+    box-sizing: border-box;
 }
 
 /* navbar */
 nav {
-    padding: 24px 160px 24px 160px;
+    padding: 1.5rem 10%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 20px;
+    margin-bottom: 1.25rem;
 }
 
 nav h1 {
-    font-size: 32px;
+    font-size: 2rem;
     font-weight: 700;
     color: rgb(14, 14, 14);
 }
 
-/* .nav_btn */
 nav button {
-    padding: 15px 30px;
-    box-sizing: border-box;
+    padding: 0.9375rem 1.875rem;
     border: 1px solid rgb(0, 106, 80);
-    border-radius: 8px;
+    border-radius: 0.5rem;
     color: rgb(0, 106, 80);
-    font-size: 18px;
+    font-size: 1.125rem;
     font-weight: 600;
 }
 
@@ -58,58 +57,49 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    /* align-items: center; */
-    gap: 80px;
-    /* Ensure gap is applied */
-    padding: 0 160px;
-    /* Apply 160px margin to respect spacing */
-    width: calc(100% - 320px);
-    /* Ensure no overflow due to margin */
+    gap: 5rem;
+    padding: 0 10%;
     background: rgb(245, 245, 245);
 }
 
 /* Hero Section */
 .hero {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    gap: 64px;
-    padding: 80px 100px;
-    border-radius: 24px;
+    gap: 4rem;
+    padding: 5rem 5%;
+    border-radius: 1.5rem;
     background: #C6E4D6;
 }
 
-/* Hero Content */
 .hero_content {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    gap: 24px;
-    margin-left: -40px;
-    /* 40px gap to push content into padding */
+    align-items: center;
+    gap: 1.5rem;
 }
 
 #hero_title {
     color: rgba(14, 14, 14, 0.5);
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 500;
-    margin: 0 0 16px 0;
-    /* 16px gap below the title */
+    margin-bottom: 1rem;
 }
 
 #hero_description {
-    font-size: 56px;
+    font-size: 3.5rem;
     font-weight: 700;
+    text-align: center;
 }
 
-/* Hero Button */
 #hero_button {
-    align-items: center;
-    padding: 17px 34px;
-    border-radius: 8px;
+    padding: 1.0625rem 2.125rem;
+    border-radius: 0.5rem;
     background: #006A50;
     color: rgb(255, 255, 255);
-    font-size: 18px;
+    font-size: 1.125rem;
     font-weight: 600;
     border: none;
     cursor: pointer;
@@ -121,198 +111,150 @@ main {
     color: #006A50;
 }
 
-/* Hero Image */
 .hero_image {
-    border-radius: 12px;
-    margin-right: -40px;
-    /* 40px gap to push content into padding */
+    border-radius: 0.75rem;
+    width: 100%;
 }
 
 /* Pillars of Bangladesh Section */
 .bd_pillar {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    gap: 32px;
+    gap: 2rem;
 }
 
 .cards_container {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    gap: 24px;
+    flex-direction: column;
+    gap: 1.5rem;
 }
 
 .card {
-    width: 302px;
-    height: auto;
+    width: 100%;
     display: flex;
     flex-direction: column;
-    gap: 24px;
-    padding: 24px;
-    box-sizing: border-box;
+    gap: 1.5rem;
+    padding: 1.5rem;
     border: 1px solid rgba(14, 14, 14, 0.15);
-    border-radius: 16px;
+    border-radius: 1rem;
     background: rgb(255, 255, 255);
 }
 
 .card img {
-    width: 64px;
-    height: 64px;
+    width: 4rem;
+    height: 4rem;
 }
 
 .card_content {
     display: flex;
     flex-direction: column;
-    gap: 12px;
+    gap: 0.75rem;
 }
 
 .card_heading {
     color: rgba(14, 14, 14, 0.8);
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: 700;
     text-align: left;
 }
 
 .card_description {
     color: rgba(14, 14, 14, 0.7);
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 400;
-    line-height: 24px;
-    letter-spacing: 0%;
+    line-height: 1.5rem;
     text-align: left;
 }
 
-
-/* vision of future  */
-
-/* Vision Section Container */
+/* Vision Section */
 #vision {
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
-    gap: 32px;
+    gap: 2rem;
 }
 
-/* Vision Title */
 .vision-title {
     color: rgb(14, 14, 14);
-    font-size: 40px;
+    font-size: 2.5rem;
     font-weight: 700;
-    line-height: 48px;
-    letter-spacing: 0%;
     text-align: left;
 }
 
-/* Vision Description */
 .vision-description {
     color: rgba(14, 14, 14, 0.7);
-    font-family: Fira Sans;
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 400;
-    line-height: 24px;
-    letter-spacing: 0%;
+    line-height: 1.5rem;
     text-align: left;
 }
 
 .vision-content {
     display: flex;
     flex-direction: column;
-    gap: 24px;
+    gap: 1.5rem;
 }
 
-
-/* Each Card*/
-#card1 {
+.vision-cards-container {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    gap: 24px;
-    padding: 32px;
-    box-sizing: border-box;
-    border-radius: 16px;
+    gap: 1.5rem;
+}
+
+#card1, #card2, #card3 {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 2rem;
+    border-radius: 1rem;
+}
+
+#card1 {
     background: #5490F533;
 }
 
 #card2 {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    gap: 24px;
-    padding: 32px;
-    box-sizing: border-box;
-    border-radius: 16px;
     background: #C6E4D6;
 }
 
 #card3 {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    gap: 24px;
-    padding: 32px;
-    box-sizing: border-box;
-    border-radius: 16px;
     background: #F7EBCF;
 }
 
-/* card-container */
-.vision-cards-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-    gap: 24px;
-}
-
-/* Card Icon */
 .card-icon {
-    width: 64px;
-    height: 64px;
-    /* Keep consistent aspect ratio */
+    width: 4rem;
+    height: 4rem;
 }
 
-/* Card Heading */
 .card-heading {
     color: rgba(14, 14, 14, 0.8);
-    font-family: "Fira Sans", sans-serif;
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: 700;
-    line-height: 24px;
     text-align: left;
     margin: 0;
-    /* Remove default heading margin */
 }
 
-/* Card Description */
 .card-description {
     color: rgba(14, 14, 14, 0.7);
-    font-family: "Fira Sans", sans-serif;
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 400;
-    line-height: 24px;
+    line-height: 1.5rem;
     text-align: left;
     margin: 0;
-    /* Remove default paragraph margin */
 }
 
-/* Card Button */
-#card-button1 {
-    border-radius: 8px;
-    background: #5490F5;
-    color: rgb(255, 255, 255);
-    font-family: "Fira Sans", sans-serif;
-    font-size: 16px;
+#card-button1, #card-button2, #card-button3 {
+    border-radius: 0.5rem;
+    font-size: 1rem;
     font-weight: 600;
-    line-height: 19px;
-    text-align: center;
-    padding: 10px 20px;
+    padding: 0.625rem 1.25rem;
     border: none;
     cursor: pointer;
     transition: background 0.3s ease;
+}
+
+#card-button1 {
+    background: #5490F5;
+    color: rgb(255, 255, 255);
 }
 
 #card-button1:hover {
@@ -321,18 +263,8 @@ main {
 }
 
 #card-button2 {
-    border-radius: 8px;
     background: #09A15C;
     color: #ffffff;
-    font-family: "Fira Sans", sans-serif;
-    font-size: 16px;
-    font-weight: 600;
-    line-height: 19px;
-    text-align: center;
-    padding: 10px 20px;
-    border: none;
-    cursor: pointer;
-    transition: background 0.3s ease;
 }
 
 #card-button2:hover {
@@ -341,18 +273,8 @@ main {
 }
 
 #card-button3 {
-    border-radius: 8px;
     background: #FFC239;
     color: #ffffff;
-    font-family: "Fira Sans", sans-serif;
-    font-size: 16px;
-    font-weight: 600;
-    line-height: 19px;
-    text-align: center;
-    padding: 10px 20px;
-    border: none;
-    cursor: pointer;
-    transition: background 0.3s ease;
 }
 
 #card-button3:hover {
@@ -364,203 +286,140 @@ main {
 #quote_content {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    gap: 12px;
-    padding: 48px 24px 48px 24px;
-    /* background-image: image("images/quote-bg.png"); */
-    box-sizing: border-box;
+    gap: 0.75rem;
+    padding: 3rem 1.5rem;
     border: 1px solid #0e0e0e26;
-    border-radius: 16px;
+    border-radius: 1rem;
     background: #ffffff;
     position: relative;
 }
 
 #quote-bg {
-    width: 64px;
-    height: 64px;
+    width: 4rem;
+    height: 4rem;
     position: absolute;
-    top: 20px;
+    top: 1.25rem;
 }
 
 .quote_text {
     color: rgba(14, 14, 14, 0.8);
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 400;
 }
 
 .signature h1 {
     color: rgba(14, 14, 14, 0.8);
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: 600;
 }
 
 .signature p {
     color: rgba(14, 14, 14, 0.6);
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 400;
 }
 
 /* news section */
-
 .news {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    gap: 32px;
-    padding: 0px;
+    gap: 2rem;
 }
 
 .news_sec_desc {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    gap: 24px;
-    padding: 0px;
+    gap: 1.5rem;
 }
 
 .news_sec_desc h1 {
-    font-size: 40px;
+    font-size: 2.5rem;
     font-weight: 700;
 }
 
 .news_sec_desc p {
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 400;
 }
 
-.news_card {
+.news_card, .news_card_rev {
     display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: center;
-    gap: 32px;
-    padding: 48px;
-    border-radius: 24px;
-    background: rgb(255, 255, 255);
-}
-
-.news_card_rev {
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: flex-start;
-    align-items: center;
-    gap: 32px;
-    padding: 48px;
-    border-radius: 24px;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 3rem;
+    border-radius: 1.5rem;
     background: rgb(255, 255, 255);
 }
 
 #news_img {
-    border-radius: 24px;
+    border-radius: 1.5rem;
+    width: 100%;
 }
 
 .news_card_content {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    align-items: flex-start;
-    gap: 32px;
+    gap: 2rem;
 }
 
 .news_content {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    gap: 12px;
+    gap: 0.75rem;
 }
 
-#card_btn1 {
-    padding: 13px 26px 13px 26px;
-    border-radius: 8px;
+#card_btn1, #card_btn2, #card_btn3 {
+    padding: 0.8125rem 1.625rem;
+    border-radius: 0.5rem;
     background: #006a50;
     color: rgb(255, 255, 255);
-    font-size: 18px;
+    font-size: 1.125rem;
     font-weight: 600;
 }
 
-#card_btn1:hover {
+#card_btn1:hover, #card_btn2:hover, #card_btn3:hover {
     background: #ffffff;
     color: #006a50;
     border: 1px solid #006a50;
 }
-#card_btn2 {
-    padding: 13px 26px 13px 26px;
-    border-radius: 8px;
-    background: #006a50;
-    color: rgb(255, 255, 255);
-    font-size: 18px;
-    font-weight: 600;
-}
-
-#card_btn2:hover {
-    background: #ffffff;
-    color: #006a50;
-    border: 1px solid #006a50;
-}
-#card_btn3 {
-    padding: 13px 26px 13px 26px;
-    border-radius: 8px;
-    background: #006a50;
-    color: rgb(255, 255, 255);
-    font-size: 18px;
-    font-weight: 600;
-}
-
-#card_btn3:hover {
-    background: #ffffff;
-    color: #006a50;
-    border: 1px solid #006a50;
-}
-
 
 /* Donation section */
 .donation-container {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
     align-items: center;
-    gap: 32px;
-    padding: 0px;
+    gap: 2rem;
 }
 
 .donation-container h1 {
     color: rgb(14, 14, 14);
-    font-size: 40px;
+    font-size: 2.5rem;
     font-weight: 700;
 }
 
 .donation-container p {
     color: rgba(14, 14, 14, 0.7);
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 400;
     text-align: center;
 }
 
 .donation-buttons {
     display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: center;
-    gap: 24px;
-    padding: 0px;
+    flex-direction: column;
+    gap: 1.5rem;
 }
 
 .donation-amount {
-    padding: 40px;
-    box-sizing: border-box;
+    padding: 2.5rem;
     border: 1px solid rgba(14, 14, 14, 0.15);
-    border-radius: 16px;
+    border-radius: 1rem;
     background: rgb(255, 255, 255);
     cursor: pointer;
     color: rgba(14, 14, 14, 0.8);
-    font-size: 40px;
+    font-size: 2.5rem;
     font-weight: 700;
     transition: background 0.3s ease, color 0.3s ease;
-
 }
 
 .donation-amount:hover {
@@ -569,32 +428,24 @@ main {
 }
 
 .custom-amount {
-    padding: 20px 40px;
-    box-sizing: border-box;
-    width: 1032px;
-    border-top: #ffffff;
-    border-left: #ffffff;
-    border-right: #ffffff;
-    ;
+    padding: 1.25rem 2.5rem;
+    width: 100%;
     border-bottom: 1px solid #0e0e0e26;
     background: rgb(255, 255, 255);
     color: rgba(0, 0, 0, 1);
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: 400;
-    cursor: text;
     text-align: center;
 }
 
 .donate-btn {
-    box-sizing: border-box;
     border: 1px solid rgba(14, 14, 14, 0.1);
-    border-radius: 8px;
+    border-radius: 0.5rem;
     background: #006a50;
-    padding: 17px 34px;
+    padding: 1.0625rem 2.125rem;
     color: #ffffff;
-    font-size: 18px;
+    font-size: 1.125rem;
     font-weight: 600;
-
     cursor: pointer;
     transition: background 0.3s ease;
 }
@@ -607,8 +458,8 @@ main {
 
 /* Newsletter */
 .newsletter {
-    padding: 80px 100px;
-    border-radius: 24px;
+    padding: 5rem 5%;
+    border-radius: 1.5rem;
     background: rgb(198, 228, 214);
 }
 
@@ -616,60 +467,52 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 0px 200px;
-    gap: 24px;
-    padding: 0px; 
+    gap: 1.5rem;
 }
 
 .newsletter-content-title {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 0 64px;
-    gap: 16px;
+    gap: 1rem;
 }
 
 .newsletter h1 {
     color: rgb(14, 14, 14);
-    font-size: 40px;
+    font-size: 2.5rem;
     font-weight: 700;
 }
 
 .newsletter p {
     color: rgba(14, 14, 14, 0.7);
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 400;
     text-align: center;
 }
+
 .input {
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 0;
-    padding: 0;
     width: 100%;
 }
 
 .input input {
     color: rgba(14, 14, 14, 0.3);
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 400;
-    padding: 18px 40px;
-    border-radius: 8px 0px 0px 8px;
+    padding: 1.125rem 2.5rem;
+    border-radius: 0.5rem 0 0 0.5rem;
     background: rgb(255, 255, 255);
     border: none;
-    flex: 100%;
+    flex: 1;
 }
 
 .input button {
-
-    padding: 17px 34px;
+    padding: 1.0625rem 2.125rem;
     color: rgb(255, 255, 255);
-    font-size: 18px;
+    font-size: 1.125rem;
     font-weight: 600;
     border: none;
-    border-radius: 0px 8px 8px 0px;
+    border-radius: 0 0.5rem 0.5rem 0;
     background: #006a50;
     cursor: pointer;
     transition: background 0.3s ease;
@@ -683,30 +526,231 @@ main {
 
 .note {
     color: #0e0e0eb3;
-    font-family: Fira Sans;
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 400;
     text-align: center;
-    align-items: center;
-    gap: 24px;
-    padding: 0px;
 }
-footer{
-display: flex;
-flex-direction: column;justify-content: space-between;
-align-items: center;
-gap: 32px;
-padding: 50px 160px 50px 160px;
-background: rgb(255, 255, 255);
-}
-footer h1{
-color: rgb(14, 14, 14);
-font-size: 32px;
-font-weight: 700;
-}
-footer ul{
+
+/* footer section */
+footer {
     display: flex;
-    justify-content: space-evenly;
-    gap: 23px;
-list-style: none;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    padding: 3.125rem 10%;
+    background: rgb(255, 255, 255);
+}
+
+footer h1 {
+    color: rgb(14, 14, 14);
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+footer ul {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    list-style: none;
+}
+
+@media (min-width: 576px) {
+    nav {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    nav h1 {
+        font-size: 2rem;
+    }
+
+    nav button {
+        padding: 0.9375rem 1.875rem;
+        font-size: 1.125rem;
+    }
+
+    main {
+        padding: 0 10%;
+    }
+
+    .hero {
+        flex-direction: row;
+        padding: 5rem 5%;
+        gap: 4rem;
+    }
+
+    .hero_content {
+        align-items: flex-start;
+    }
+
+    #hero_title {
+        font-size: 1.5rem;
+    }
+
+    #hero_description {
+        font-size: 3.5rem;
+        text-align: left;
+    }
+
+    #hero_button {
+        padding: 1.0625rem 2.125rem;
+        font-size: 1.125rem;
+    }
+
+    .hero_image {
+        width: auto;
+    }
+
+    .cards_container {
+        flex-direction: row;
+        gap: 1.5rem;
+    }
+
+    .card {
+        width: 30%;
+    }
+
+    .vision-cards-container {
+        flex-direction: row;
+        gap: 1.5rem;
+    }
+
+    .news_card, .news_card_rev {
+        flex-direction: row;
+        padding: 3rem;
+        gap: 2rem;
+    }
+
+    .donation-buttons {
+        flex-direction: row;
+        gap: 1.5rem;
+    }
+
+    .donation-amount {
+        width: auto;
+        font-size: 2.5rem;
+    }
+
+    .custom-amount {
+        width: auto;
+    }
+
+    .newsletter-content {
+        margin: 0 10%;
+    }
+
+    .input input {
+        padding: 1.125rem 2.5rem;
+    }
+
+    .input button {
+        padding: 1.0625rem 2.125rem;
+    }
+
+    footer ul {
+        flex-direction: row;
+        gap: 1rem;
+    }
+}
+@media (min-width: 899px) {
+    nav {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    nav h1 {
+        font-size: 1.75rem;
+    }
+
+    nav button {
+        padding: 0.75rem 1.5rem;
+        font-size: 1rem;
+    }
+
+    main {
+        padding: 0 5%;
+    }
+
+    .hero {
+        flex-direction: row;
+        padding: 4rem 5%;
+        gap: 3rem;
+    }
+
+    .hero_content {
+        align-items: flex-start;
+    }
+
+    #hero_title {
+        font-size: 1.25rem;
+    }
+
+    #hero_description {
+        font-size: 3rem;
+        text-align: left;
+    }
+
+    #hero_button {
+        padding: 1rem 2rem;
+        font-size: 1rem;
+    }
+
+    .hero_image {
+        width: auto;
+    }
+
+    .cards_container {
+        flex-direction: row;
+        gap: 1rem;
+    }
+
+    .card {
+        width: 45%;
+    }
+
+    .vision-cards-container {
+        flex-direction: row;
+        gap: 1rem;
+    }
+
+    .news_card, .news_card_rev {
+        flex-direction: row;
+        padding: 2.5rem;
+        gap: 1.5rem;
+    }
+
+    .donation-buttons {
+        flex-direction: row;
+        gap: 1rem;
+    }
+
+    .donation-amount {
+        width: auto;
+        font-size: 2rem;
+    }
+
+    .custom-amount {
+        width: auto;
+    }
+
+    .newsletter-content {
+        margin: 0 5%;
+    }
+
+    .input {
+        width: 100%;
+    }
+
+    .input input {
+        padding: 1rem 2rem;
+    }
+
+    .input button {
+        padding: 1rem 2rem;
+    }
+
+    footer ul {
+        flex-direction: row;
+        gap: 0.75rem;
+    }
 }
